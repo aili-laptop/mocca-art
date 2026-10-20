@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mocca & Art | Затишна кав'ярня</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Шапка -->
+  <header class="header">
+    <div class="logo">Mocca<span>&Art</span></div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#hero" class="nav-link">Головна</a>
+      <a href="#about" class="nav-link">Про нас</a>
+      <a href="#menu" class="nav-link">Меню</a>
+      <a href="#reviews" class="nav-link">Відгуки</a>
+      <a href="#booking" class="nav-link">Бронювання</a>
+    </nav>
+    <button class="burger-btn" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- 2. Головний екран -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Естетика кавової майстерності</h1>
+      <p>Ми створюємо більше ніж каву — ми створюємо моменти затишку та натхнення у кожній чашці.</p>
+      <a href="#booking" class="btn btn-primary">Забронювати столик</a>
+    </div>
+  </section>
+
+  <!-- 3. Про нас -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <h2 class="section-title">Чому обирають нас</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">☕</div>
+          <h3>Свіжобсмажені зерна</h3>
+          <p>Використовуємо лише 100% арабіку преміум-класу від перевірених фермерів.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🥐</div>
+          <h3>Власна випічка</h3>
+          <p>Щоранку випікаємо хрусткі круасани та ніжні десерти за авторськими рецептами.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3>Затишна атмосфера</h3>
+          <p>Ідеальне місце для робочих зустрічей, читання книг або відпочинку з друзями.</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- 4. Меню -->
+  <section class="menu-section section-padding" id="menu">
+    <div class="container">
+      <h2 class="section-title">Наше меню</h2>
+      
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">Все меню</button>
+        <button class="filter-btn" data-category="coffee">Кава</button>
+        <button class="filter-btn" data-category="dessert">Десерти</button>
+        <button class="filter-btn" data-category="breakfast">Сніданки</button>
+      </div>
+
+      <div class="menu-grid">
+        
+        <!-- Кава -->
+        <div class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=600&q=80" alt="Еспресо" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Еспресо Double</h3>
+              <span class="price">65 грн</span>
+            </div>
+            <p>Насичений та міцний смак з оксамитовою пінкою crema.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&q=80" alt="Капучино" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Капучино Grand</h3>
+              <span class="price">85 грн</span>
+            </div>
+            <p>Класичний баланс густого еспресо та ніжного збитого молока.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&q=80" alt="Раф кава" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Раф Солона Карамель</h3>
+              <span class="price">105 грн</span>
+            </div>
+            <p>Ніжний кавово-вершковий напій із тягучою солоною карамаллю.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1530373239216-42518e6b4063?w=600&q=80" alt="Лате" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Лате Макіато</h3>
+              <span class="price">90 грн</span>
+            </div>
+            <p>Легкий тришаровий напій з м'якою молочною піною.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <img src="https://images.unsplash.com/photo-1577968897966-3d4325b36b61?w=600&q=80" alt="Флет Уайт" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Флет Уайт</h3>
+              <span class="price">95 грн</span>
+            </div>
+            <p>Подвійна порція еспресо з тонким шаром шовковистого молока.</p>
+          </div>
+        </div><!-- Десерти -->
+        <div class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=600&q=80" alt="Фісташковий тарт" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Фісташковий тарт</h3>
+              <span class="price">130 грн</span>
+            </div>
+            <p>Хрустка пісочна основа, ніжно-фісташковий крем та свіжі ягоди.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Круасан" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Мигдалевий круасан</h3>
+              <span class="price">95 грн</span>
+            </div>
+            <p>Французький випіканий круасан з ароматним мигдалевим кремом.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=600&q=80" alt="Чизкейк" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Чизкейк Нью-Йорк</h3>
+              <span class="price">120 грн</span>
+            </div>
+            <p>Класичний вершково-сирний десерт із ванільним ароматом.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="dessert">
+          <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&q=80" alt="Тирамісу" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Авторське Тирамісу</h3>
+              <span class="price">125 грн</span>
+            </div>
+            <p>Печиво савоярді, просочене еспресо та лікером, із кремом маскарпоне.</p>
+          </div>
+        </div>
+
+        <!-- Сніданки -->
+        <div class="menu-card" data-category="breakfast">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=80" alt="Авокадо тост" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Авокадо тост з яйцем</h3>
+              <span class="price">165 грн</span>
+            </div>
+            <p>Крафтовий хліб на заквасці, стигле авокадо, яйце пашот та мікрозелень.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="breakfast">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Сирники" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Ніжні сирники</h3>
+              <span class="price">140 грн</span>
+            </div>
+            <p>Подаються з домашнім ягідним кулі та сметаною.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="breakfast">
+          <img src="https://images.unsplash.com/photo-1588137378633-dea1336ce1e2?w=600&q=80" alt="Скрембл" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Скрембл із лососем</h3>
+              <span class="price">185 грн</span>
+            </div>
+            <p>Ніжна яєчня-скрембл, слабосолений лосось, шпинат та тепла бріош.</p>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="breakfast">
+          <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&q=80" alt="Панкейки" class="menu-img">
+          <div class="menu-info">
+            <div class="menu-header">
+              <h3>Пишні панкейки</h3>
+              <span class="price">135 грн</span>
+            </div>
+            <p>Американські оладки з кленовим сиропом та свіжою полуницею.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section><!-- 5. Відгуки -->
+  <section class="reviews section-padding" id="reviews">
+    <div class="container">
+      <h2 class="section-title">Відгуки гостей</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <p class="review-text">«Найкраща кава у місті. Атмосфера просто затишна та розслабляюча, завжди приємно попрацювати тут за ноутбуком.»</p>
+          <span class="review-author">Олена Коваленко</span>
+        </div>
+        <div class="review-card">
+          <p class="review-text">«Мигдалевий круасан у поєднанні з капучино — це мій щоранковий ритуал щастя! Дякую персоналу за сервіс.»</p>
+          <span class="review-author">Михайло Петров</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Бронювання -->
+  <section class="booking section-padding" id="booking">
+    <div class="container">
+      <div class="booking-wrapper">
+        <h2 class="section-title">Забронювати столик</h2>
+        <form class="booking-form" id="bookingForm" novalidate>
+          <div class="form-group">
+            <label for="userName">Ваше ім'я</label>
+            <input type="text" id="userName" placeholder="Олександр" required>
+          </div>
+
+          <div class="form-group">
+            <label for="userPhone">Номер телефону</label>
+            <input type="tel" id="userPhone" placeholder="+380 97 000 0000" required>
+          </div>
+
+          <div class="form-group">
+            <label for="guestsCount">Кількість гостей</label>
+            <select id="guestsCount" required>
+              <option value="1">1 особа</option>
+              <option value="2" selected>2 особи</option>
+              <option value="3-4">3-4 особи</option>
+              <option value="5+">Компанія (5+ осіб)</option>
+            </select>
+          </div>
+
+          <div id="formError" class="error-message"></div>
+          <button type="submit" class="btn btn-primary btn-block">Підтвердити бронь</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Подвал -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo">Mocca<span>&Art</span></div>
+      <p>вул. Хрещатик, 24 | Щодня з 08:00 до 22:00</p>
+      <p>© 2026 Mocca & Art. Всі права захищені.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
